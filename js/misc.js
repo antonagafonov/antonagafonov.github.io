@@ -10,11 +10,11 @@ const loader = new THREE.OBJLoader();
 loader.load('models/arm.obj', (obj) => {
     // Add texture to the model
     const texture = new THREE.TextureLoader().load('textures/texture.png');
-    // obj.traverse((child) => {
-    //     if (child instanceof THREE.Mesh) {
-    //         child.material.map = texture;
-    //     }
-    // });
+    obj.traverse((child) => {
+        if (child instanceof THREE.Mesh) {
+            child.material.map = texture;
+        }
+    });
 
     // Add the model to the scene
     scene.add(obj);
