@@ -15,7 +15,8 @@ document.getElementById('container').appendChild(renderer.domElement);
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
 
 // Set the position of the light
-directionalLight.position.set(1, 1, 1);
+// directionalLight.position.set(1, 1, 1);
+directionalLight.position.set(0.5,0.2,0.5);
 
 // Add the light to the scene
 scene.add(directionalLight);
