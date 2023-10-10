@@ -1,3 +1,9 @@
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
+
+const controls = new OrbitControls( camera, renderer.domElement );
+
 // Initialize Three.js
 const scene = new THREE.Scene();
 
