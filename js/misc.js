@@ -7,7 +7,7 @@ document.getElementById('container').appendChild(renderer.domElement);
 
 // Load the model
 const loader = new THREE.OBJLoader();
-loader.load('models/smplx_neutral_tpose.ply', (obj) => {
+loader.load('models/arm.obj', (obj) => {
     // Add texture to the model
     const texture = new THREE.TextureLoader().load('textures/texture.png');
     obj.traverse((child) => {
